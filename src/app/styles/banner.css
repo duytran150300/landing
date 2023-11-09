@@ -1,0 +1,113 @@
+.banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .autoplay-progress {
+  position: absolute;
+  right: 14%;
+  bottom: 18%;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.banner .autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: #fff;
+  fill: none;
+  stroke-dashoffset: calc(565.48 * (1 - var(--progress)));
+  stroke-dasharray: 565.48;
+  transform: rotate(-90deg);
+}
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+.banner .swiper-pagination {
+  bottom: 23% !important;
+  text-align: right;
+  right: 4%;
+  width: 80.4%;
+  color: rgba(255, 255, 255, 0.72);
+}
+.autoplay-progress span {
+  opacity: 0;
+}
+.banner .swiper-pagination-current {
+  display: block !important;
+  color: #f59045;
+  font-family: AG Fsel 2022;
+  font-size: 57px;
+  font-weight: 700;
+  line-height: 64px; /* 112.281% */
+}
+.banner .swiper-pagination-total {
+  color: rgba(255, 255, 255, 0.72);
+  font-family: AG Fsel 2022;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.banner .swiper-slide {
+  padding: 0;
+}
+.banner .swiper-wrapper {
+  padding: 17px 0 48px 0;
+}
+.arrow {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid rgb(255, 255, 255);
+  margin-right: 28px;
+  margin-bottom: 20px;
+}
+.line {
+  width: 45px;
+  height: 1.5px;
+  margin-bottom: 20px;
+  background-color: #fff;
+}
+.banner .swiper-slide {
+  margin-right: 20px !important;
+}
+@media screen and (min-width: 1630px) {
+  .banner .swiper-pagination {
+    bottom: 22% !important;
+    text-align: right;
+    right: 4%;
+    width: 81.6%;
+    color: rgba(255, 255, 255, 0.72);
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import "../styles/responsive.css";
 const Header = () => {
   return (
     <header className="header">
@@ -8,10 +8,10 @@ const Header = () => {
         <nav className="navbar navbar-expand-lg ">
           <a className="navbar-brand" href="#">
             <Image
-              src={"/logo_fsel.png"}
+              src={"/logo_group.png"}
               alt={"logo"}
-              width={90}
-              height={56}
+              width={195}
+              height={45}
             ></Image>
           </a>
           <button
@@ -62,24 +62,53 @@ const Header = () => {
                   Liên hệ
                 </a>
               </li>
-              <li className="search">
-                <Image
-                  src={"/Search.png"}
-                  alt={""}
-                  height={10}
-                  width={10}
-                ></Image>
-              </li>
+              <li className="nav-item">
+                <ul className="navbar-nav d-flex justify-content-between align-items-center w-100 text-white gap-3">
+                  <li className="search">
+                    <Image
+                      src={"/Vector.svg"}
+                      alt={""}
+                      height={10}
+                      width={10}
+                    ></Image>
+                  </li>
+                  <li className="search">
+                    <Image
+                      src={"/Vector (1).svg"}
+                      alt={""}
+                      height={10}
+                      width={10}
+                    ></Image>
+                  </li>
+                  <li className="search">
+                    <Image
+                      src={"/Youtube (1).svg"}
+                      alt={""}
+                      height={10}
+                      width={10}
+                    ></Image>
+                  </li>
+                  <div className="vertical-slash"></div>
+                  <li className="search">
+                    <Image
+                      src={"/Search.svg"}
+                      alt={""}
+                      height={10}
+                      width={10}
+                    ></Image>
+                  </li>
 
-              <div className="translate d-flex align-items-center">
-                <span className="d-bloc">VN</span>
-                <Image
-                  src={"/Caret_Down_SM.svg"}
-                  alt={""}
-                  width={10}
-                  height={10}
-                ></Image>
-              </div>
+                  <div className="translate d-flex align-items-center">
+                    <span className="d-bloc">VN</span>
+                    <Image
+                      src={"/arrow.svg"}
+                      alt={""}
+                      width={10}
+                      height={10}
+                    ></Image>
+                  </div>
+                </ul>
+              </li>
             </ul>
           </div>
         </nav>
