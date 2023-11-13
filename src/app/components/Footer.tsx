@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-
+import "../styles/responsive.css";
 const Footer = () => {
   return (
     <footer>

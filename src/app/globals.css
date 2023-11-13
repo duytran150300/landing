@@ -39,10 +39,11 @@
   position: fixed;
   width: 100%;
   z-index: 9999;
+  background: #fff;
 }
 .nav-item .nav-link,
 .translate span {
-  color: #f5f7fa;
+  color: #1a497f;
   text-align: center;
   font-family: AG Fsel;
   font-size: 14px;
@@ -60,6 +61,12 @@
   width: 24px;
   height: 24px;
 }
+.vertical-slash {
+  width: 0px;
+  height: 18px;
+  stroke-width: 1px;
+  border-right: 1px solid rgba(26, 73, 127, 0.4);
+}
 /* banner */
 .banner img {
   width: 100% !important;
@@ -67,27 +74,46 @@
 }
 
 /* body */
-.content-bg-new {
-  background: #f3f4f5;
-  padding: 56px 80px 57px 80px;
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 0 !important;
 }
 .content-title {
   font-family: AG Fsel Bold;
-  margin: 56px 0;
+  margin-top: 56px;
+  padding-bottom: 24px;
 }
-.content-title span {
+.content-title-group {
   margin-bottom: 16px;
   color: var(--third-color);
   font-size: 16px;
   letter-spacing: 5.12px;
   text-transform: uppercase;
 }
-.content-title h3 {
+.content-title h3,
+.business-heading h3 {
   color: var(--primary-color);
   font-size: 40px;
   font-family: AG Fsel Bold;
   font-weight: 700;
 }
+.mySwiper img {
+  width: 100%;
+}
+.swiper-wrapper {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 20px;
+  background: #fff;
+}
+
 /* footer */
 footer {
   background: var(--primary-color);
