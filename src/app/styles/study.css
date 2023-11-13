@@ -136,7 +136,8 @@
 .study-content-bg {
   background: #fff3ec;
 }
-@media (min-width: 1440px) and (max-width: 1590px) {
+
+@media (min-width: 1440px) and (max-width: 1620px) {
   .box-content-study .swiper-button-prev {
     left: 41.6%;
   }

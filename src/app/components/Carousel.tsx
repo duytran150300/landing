@@ -114,8 +114,8 @@ export default function Slider() {
                     Du học sinh xuất sắc tại Mỹ
                   </span>
                   <span className="box-study-board-content-text">
-                    Đến từ Việt Nam với những ước mơ, hoài bão to lớn. Cô gái đã
-                    tự tin bước đi trên những hành trình đầy thử thách tại Mỹ.
+                    Với những ước mơ, hoài bão to lớn. Cô gái tự tin bước trên
+                    những hành trình đầy thử thách tại Mỹ.
                   </span>
                 </div>
               </div>

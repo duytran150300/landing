@@ -111,3 +111,16 @@
     color: rgba(255, 255, 255, 0.72);
   }
 }
+@media (min-width: 1440px) and (max-width: 1590px) {
+  .banner .swiper-pagination {
+    bottom: 22.5% !important;
+    width: 80.6%;
+  }
+  .line,
+  .arrow {
+    margin-bottom: 15px;
+  }
+  .arrow {
+    margin-right: 22px;
+  }
+}
